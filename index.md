@@ -39,7 +39,8 @@ app.listen(process.env.PORT || 3000, function() {...
 * Next you'll need to create a thing called a **Procfile**
   - This needs to be created in the root of the app's directory so go navigate to the app's folder in terminal and type:
 
-`$ touch Procfile`  
+`$ touch Procfile`
+
 Notice there's no extension on it, it's just **Procfile**
 
 * Open your newly created **Procfile** in your favourite text editor (cough, cough, [Visual Studio Code](https://code.visualstudio.com/download)), and put the following:
@@ -51,4 +52,40 @@ web: node server.js
 That's it! We're ready to get this online 🤩
 
 ***
-### 
+### Create the webapp  
+
+Head over to your apps section on the [Heroku website](https://dashboard.heroku.com/apps), click on the '**New**' button, and select '**Create new app**' from the drop down menu. This'll bring you to a page that let's you pick a name for your app and where it'll get hosted
+
+As hopefully you've noticed, this site has a crazy name. That's what happens when you leave it blank. For development I tend to let it generate names like this since otherwise I might be depriving someone of a name they really want, and I've already taken it for some banal purpose. For you proudest creations, go crazy and name it whatever you want
+
+Usually it's a good idea to change the region in the '**Choose a region**' dropdown to **Europe**
+
+When you're ready click on '**Create app**'
+
+You will now see how simple it is to deploy to Heroku. They have super clear instructions which I will steal wholecloth to look like I know what I'm doing:  
+
+* Hopefully you are still in your code's root folder and hopefully you have used **Git** on it throughout your development of it 😋
+* If not then we'll:  
+
+`$ git init`  
+
+* In the case of this site I wrote the following, obviously you'll just be copying straight from the Heroku instructions but for illustrative purposes:
+
+`$ heroku git:remote -a obscure-beach-50298`
+
+* Now we're getting close:  
+
+`$ git add .`  
+`$ git commit -m "about to push to heroku!"`  
+`$ git push heroku master`
+
+If everything has worked *(and I genuinely will be surprised if my instructions haven't missed out something important)* then you should see some nonsense filling your terminal. If it's been successful then the last few lines will mention things like '**Compressing...**' and '**Launching**' and, almost finally, '**Verifying deploy... done**'  
+
+Now we jump back to the page in Heroku that contained the deployment instructions. Scroll back to the top and click on '**Open app**' in the top right 🤞. Moment of truth...   
+
+Wait a few seconds before panicking. These are free servers and can take a wee while to spin up but if we're lucky you should see you site in all its glory
+
+If it hasn't worked then just let me know and we'll get it sorted as deploying is super fun and let's start making your imprint online. I have a tonne of silly things out there thanks to Heroku. I've also done some cool things with it too so please do give this a try
+
+Thanks,   
+Euan
