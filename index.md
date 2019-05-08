@@ -6,7 +6,7 @@ Heroku is a free hosting site similar to AWS, Azure, etc... I like it as it's su
 
 First things first we're going to need you to get setup on the heroku side of things:  
 * Go to [Heroku](https://signup.heroku.com/‎) and sign up
-* Navigate to the [Heroku CLI tools](https://devcenter.heroku.com/articles/heroku-cli)
+* Navigate to the [Heroku CLI tools](https://devcenter.heroku.com/articles/heroku-cli) and follow the instructions there
   - If you have [Homebrew](https://brew.sh/) installed then I'd suggest using that for the easiest way. Just run the following from your terminal:
 
 `$ brew tap heroku/brew && brew install heroku`
@@ -28,9 +28,9 @@ If you miss the '**-i**' off the end then it'll take you to the site to login, w
 
 Or better yet, use one of the ones you have already on your machine. I'd say anything in Javascript that you can run on **localhost** is a suitable candidate
 
-Once you've picked one, doesn't have to be a super fancy one as this time is just for practice. Avoid any that reference databases at this stage. We can cover that another time 😵
+This doesn't have to be a super fancy one as this time is just for practice. Avoid any that reference databases at this stage. We can cover that another time 😵
 
-Might be worth making a copy of the file or jumping onto another Git Branch if you're comfortable doing that. Anyhoo once you're happy to proceed you'll need to do the following:  
+Might be worth making a copy of the file or jumping onto another Git Branch if you're comfortable doing that. Anyhoo, once you're happy to proceed you'll need to do the following:  
 * Go into the **server.js** file and change the **app.listen()** function to:
 
 ```javascript
