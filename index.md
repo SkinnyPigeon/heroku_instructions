@@ -64,7 +64,7 @@ When you're ready click on '**Create app**'
 
 You will now see how simple it is to deploy to Heroku. They have super clear instructions which I will steal wholecloth to look like I know what I'm doing:  
 
-* Hopefully you are still in your code's root folder and hopefully you have used **Git** on it throughout your development of it 😋
+* Hopefully you are still in your code's root folder and hopefully you have used **Git** on it throughout your development 😋
 * If not then we'll:  
 
 `$ git init`  
