@@ -407,6 +407,30 @@ blockquote {
 <hr>
 <h3 id="make-an-app">Make an app</h3>
 <p>Or better yet, use one of the ones you have already on your machine. I'd say anything in Javascript that you can run on <strong>localhost</strong> is a suitable candidate</p>
+<p>Once you've picked one, doesn't have to be a super fancy one as this time is just for practice. Avoid any that reference databases at this stage. We can cover that another time 😵</p>
+<p>Might be worth making a copy of the file or jumping onto another Git Branch if you're comfortable doing that. Anyhoo once you're happy to proceed you'll need to do the following:</p>
+<ul>
+<li>Go into the <strong>server.js</strong> file and change the <strong>app.listen()</strong> function to:</li>
+</ul>
+<pre class="hljs"><code><div>app.listen(process.env.PORT || <span class="hljs-number">3000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{...
+</div></code></pre>
+<ul>
+<li>Next you'll need to create a thing called a <strong>Procfile</strong>
+<ul>
+<li>This needs to be created in the root of the app's directory so go navigate to the app's folder in terminal and type:</li>
+</ul>
+</li>
+</ul>
+<p><code>$ touch Procfile</code><br>
+Notice there's no extension on it, it's just <strong>Procfile</strong></p>
+<ul>
+<li>Open your newly created <strong>Procfile</strong> in your favourite text editor (cough, cough, <a href="https://code.visualstudio.com/download">Visual Studio Code</a>), and put the following:</li>
+</ul>
+<pre class="hljs"><code><div>web: node server.js
+</div></code></pre>
+<p>That's it! We're ready to get this online 🤩</p>
+<hr>
+<h3 id=""></h3>
 
 </body>
 </html>

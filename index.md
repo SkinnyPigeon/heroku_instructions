@@ -27,3 +27,28 @@ If you miss the '**-i**' off the end then it'll take you to the site to login, w
 ### Make an app
 
 Or better yet, use one of the ones you have already on your machine. I'd say anything in Javascript that you can run on **localhost** is a suitable candidate
+
+Once you've picked one, doesn't have to be a super fancy one as this time is just for practice. Avoid any that reference databases at this stage. We can cover that another time 😵
+
+Might be worth making a copy of the file or jumping onto another Git Branch if you're comfortable doing that. Anyhoo once you're happy to proceed you'll need to do the following:  
+* Go into the **server.js** file and change the **app.listen()** function to:
+
+```javascript
+app.listen(process.env.PORT || 3000, function() {...
+```
+* Next you'll need to create a thing called a **Procfile**
+  - This needs to be created in the root of the app's directory so go navigate to the app's folder in terminal and type:
+
+`$ touch Procfile`  
+Notice there's no extension on it, it's just **Procfile**
+
+* Open your newly created **Procfile** in your favourite text editor (cough, cough, [Visual Studio Code](https://code.visualstudio.com/download)), and put the following:
+
+```javascript
+web: node server.js
+```
+
+That's it! We're ready to get this online 🤩
+
+***
+### 
